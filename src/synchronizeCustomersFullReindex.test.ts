@@ -36,7 +36,7 @@ describe("synchronizeCustomersFullReindex", () => {
     await synchronizeCustomersFullReindex();
 
     expect(console.error).toHaveBeenCalledWith(
-      "Error during full reindexing:",
+      "Error during full reindexing.",
       expect.any(Error)
     );
     expect(console.log).not.toHaveBeenCalledWith(
